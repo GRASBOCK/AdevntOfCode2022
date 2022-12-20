@@ -68,7 +68,7 @@ mod tests {
 
     #[test]
     fn visibility_map() {
-        let input = "30373\n25512\n65332\n33549\n35390";
+        let input = include_str!("../../input_sample.txt");
         let trees = parse_input(input);
         let visbile = visible_trees_map(&trees);
         let vtc = visible_tree_count(&visbile);
